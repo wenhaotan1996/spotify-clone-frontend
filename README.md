@@ -21,9 +21,9 @@ Due to the limitation of Spotify API's devlopment mode and limited functions to 
   
 #### Set the following environment variables  
 - NEXTAUTH_URL: the url to redirect to after autentication (e.g. http://localhost:3000)
-- NEXT_PUBLIC_CLIENT_SECRET :acquired from Spotify API
-- NEXT_PUBLIC_CLIENT_ID :acquired from Spotify AP
-- JWT_SECRECT :secret string for JWT token
+- NEXT_PUBLIC_CLIENT_SECRET: acquired from Spotify API
+- NEXT_PUBLIC_CLIENT_ID: acquired from Spotify AP
+- JWT_SECRECT: secret string for JWT token
   
 
 
