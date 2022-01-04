@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Introduction  
+This is frontend web application mocking Spotify's web player for educational purpose. The project was implemented using  
+- [Next.js](https://nextjs.org/) 12 
+- [NextAuth.js](https://next-auth.js.org/) 
+- [Recoil](https://recoiljs.org/) 
+- [Tailwind CSS](https://tailwindcss.com/)
+- official [Spotify API](https://developer.spotify.com/)  
+    
+All information from authentication process to tracks and playlists are real data from Spotify official API.  
+Due to the limitation of Spotify API's devlopment mode and limited functions to non-premium Spotify accounts, a demo using a deployment of the application is not practical.  
+  
+# Screenshots
+![Screenshot 2022-01-03 213114](https://user-images.githubusercontent.com/38052117/148013773-913d01c3-068c-4b9f-a8c1-360036314671.png)
+![Screenshot 2022-01-03 213804](https://user-images.githubusercontent.com/38052117/148014301-f27929df-5184-47cc-897b-4338dfee23af.png)
+![Screenshot 2022-01-03 213035](https://user-images.githubusercontent.com/38052117/148013732-81303667-f3af-415b-9268-70358ab2b2b8.png)  
+  
+# To Recreate or Run the Application  
+#### You will need  
+- A Spotify developer account
+- A premium Spotify account (required for playback control)
+  
+#### Set the following environment variables  
+- NEXTAUTH_URL: the url to redirect to after autentication (e.g. http://localhost:3000)
+- NEXT_PUBLIC_CLIENT_SECRET :acquired from Spotify API
+- NEXT_PUBLIC_CLIENT_ID :acquired from Spotify AP
+- JWT_SECRECT :secret string for JWT token
+  
 
-## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
